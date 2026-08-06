@@ -1,0 +1,31 @@
+# ==========================
+# Java Build Files
+# ==========================
+backend/target/
+
+# ==========================
+# Maven Wrapper JAR (optional)
+# ==========================
+# backend/.mvn/wrapper/maven-wrapper.jar
+
+# ==========================
+# React
+# ==========================
+frontend/node_modules/
+frontend/dist/
+
+# ==========================
+# VS Code
+# ==========================
+.vscode/
+
+# ==========================
+# Environment Files
+# ==========================
+.env
+
+# ==========================
+# Operating System Files
+# ==========================
+.DS_Store
+Thumbs.db
