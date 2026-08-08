@@ -38,7 +38,7 @@ public class CsvServiceImpl implements CsvService {
                         .setHeader()
                         .setSkipHeaderRecord(true)
                         .setIgnoreEmptyLines(true)
-                        .build()
+                        .get()
                         .parse(reader)
         ) {
 
