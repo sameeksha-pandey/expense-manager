@@ -34,4 +34,19 @@ public interface ExpenseRepository extends JpaRepository<Expense, Long> {
         LIMIT 5
         """, nativeQuery = true)
     List<Object[]> getTopFiveVendors();
+
+    @Query("""
+        SELECT COUNT(e)
+        FROM Expense e
+        WHERE e.isAnomaly = true
+        """)
+    Long countAnomalies();
+
+    @Query("""
+        SELECT e
+        FROM Expense e
+        WHERE e.isAnomaly = true
+        ORDER BY e.date DESC
+        """)
+    List<Expense> findAnomalies();
 }
